@@ -1,53 +1,84 @@
-<main style="padding-top: 120px; background: var(--bg-light); padding-bottom: 8rem;">
-  <div class="container">
-    <div style="text-align: center; margin-bottom: 4rem;" class="reveal">
-      <span class="section-label">Connect</span>
-      <h1>Let's start building.</h1>
-      <p style="max-width: 500px; margin: 1rem auto 0;">Drop us a line for a free, itemised structural quote. We reply within 24 hours.</p>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Deckline Constructions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="navbar"><a href="index.html" class="nav-logo"><div class="nav-logo-mark">D</div> Deckline</a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="services.html">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="contact.html" style="color: var(--accent);">Contact</a></li></ul><a href="contact.html" class="btn btn-accent" style="padding: 0.75rem 1.5rem;">Get a Quote</a></nav>
 
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 4rem; max-width: 1000px; margin: 0 auto; align-items: start;">
-      
-      <div class="reveal">
-        <div style="margin-bottom: 2.5rem;">
-          <h3 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 0.5rem;">Direct Line</h3>
-          <a href="tel:0451668761" style="font-size: 1.75rem; font-weight: 700; color: var(--text-dark); text-decoration: none;">0451 668 761</a>
-        </div>
-
-        <div style="margin-bottom: 2.5rem;">
-          <h3 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 0.5rem;">Email</h3>
-          <a href="mailto:info@deckline.com.au" style="font-size: 1.25rem; font-weight: 600; color: var(--accent); text-decoration: none;">info@deckline.com.au</a>
-        </div>
-
-        <div style="margin-bottom: 2.5rem;">
-          <h3 style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); margin-bottom: 0.5rem;">Location</h3>
-          <p style="font-size: 1rem; color: var(--text-dark); font-weight: 500;">Sutherland Shire<br>Sydney, NSW</p>
-        </div>
+  <main style="padding-top: 80px; background: var(--bg-light); min-height: 100vh;">
+    <section class="hero-global" style="height: 40vh; min-height: 300px; background: var(--bg-dark);">
+      <div class="container hero-content reveal text-center">
+        <span class="section-label">Get in Touch</span>
+        <h1 style="margin-bottom: 1rem;">Request a Free Quote</h1>
+        <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.8);">Tell us about your project and we'll get back to you with a detailed, no-obligation quote within 24 hours.</p>
       </div>
+    </section>
 
-      <div class="reveal delay-1" style="background: var(--surface-light); padding: 3rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: 0 20px 40px rgba(0,0,0,0.03);">
-        <form onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Message Sent ✓'; this.querySelector('button').style.background = '#28a745';">
+    <section style="padding: 6rem 0;">
+      <div class="container" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem;">
+        
+        <div class="card reveal">
+          <form onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Message Sent ✓'; this.querySelector('button').style.background = '#28a745';">
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+              <div><label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.5rem;">Full Name *</label><input type="text" placeholder="John Smith" required style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; outline: none;"></div>
+              <div><label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.5rem;">Phone Number *</label><input type="tel" placeholder="0412 345 678" required style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; outline: none;"></div>
+            </div>
+            <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; margin-bottom: 1.5rem;">
+              <div><label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.5rem;">Email</label><input type="email" placeholder="john@example.com" style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; outline: none;"></div>
+              <div><label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.5rem;">Suburb</label><input type="text" placeholder="e.g. Menai" style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; outline: none;"></div>
+            </div>
+            <div style="margin-bottom: 1.5rem;">
+              <label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.5rem;">Service Type</label>
+              <select style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; outline: none; background: white;">
+                <option value="" disabled selected>What do you need?</option>
+                <option value="timber">Timber Decking</option>
+                <option value="composite">Composite Decking</option>
+                <option value="repairs">Deck Repairs</option>
+                <option value="pool">Pool Decking</option>
+              </select>
+            </div>
+            <div style="margin-bottom: 2rem;">
+              <label style="font-size: 0.85rem; font-weight: 600; display: block; margin-bottom: 0.5rem;">Project Details</label>
+              <textarea placeholder="Tell us about your project — size, style, any specific requirements..." style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; outline: none; min-height: 120px;"></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent" style="width: 100%;">Request a Free Quote</button>
+          </form>
+        </div>
+
+        <div class="card reveal delay-1">
+          <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Contact Details</h3>
           
-          <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
-            <input type="text" placeholder="First Name" required style="width: 100%; background: var(--bg-light); border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; font-family: inherit; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'">
-            <input type="text" placeholder="Last Name" required style="width: 100%; background: var(--bg-light); border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; font-family: inherit; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'">
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div style="width: 48px; height: 48px; background: rgba(232,101,26,0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+            <div><div style="font-size: 0.85rem; color: var(--text-muted);">Phone</div><a href="tel:0451668761" style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); text-decoration: none;">0451 668 761</a></div>
           </div>
           
-          <input type="tel" placeholder="Phone Number" required style="width: 100%; background: var(--bg-light); border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; font-family: inherit; margin-bottom: 1rem; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'">
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div style="width: 48px; height: 48px; background: rgba(232,101,26,0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+            <div><div style="font-size: 0.85rem; color: var(--text-muted);">Email</div><a href="mailto:info@deckline.com.au" style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark); text-decoration: none;">info@deckline.com.au</a></div>
+          </div>
           
-          <select required style="width: 100%; background: var(--bg-light); border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; font-family: inherit; margin-bottom: 1rem; outline: none; appearance: none; cursor: pointer;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'">
-            <option value="" disabled selected>Service Required</option>
-            <option value="timber">Timber Decking</option>
-            <option value="composite">Composite Decking</option>
-            <option value="pool">Pool Decking</option>
-          </select>
+          <div style="display: flex; gap: 1rem; margin-bottom: 2rem;">
+            <div style="width: 48px; height: 48px; background: rgba(232,101,26,0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+            <div><div style="font-size: 0.85rem; color: var(--text-muted);">Location</div><div style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark);">Sutherland Shire, Sydney NSW</div></div>
+          </div>
           
-          <textarea placeholder="Tell us about your project..." required style="width: 100%; background: var(--bg-light); border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; font-family: inherit; margin-bottom: 1.5rem; outline: none; resize: vertical; min-height: 120px;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'"></textarea>
-          
-          <button type="submit" class="btn btn-accent" style="width: 100%;">Submit Request</button>
-        </form>
+          <div style="display: flex; gap: 1rem;">
+            <div style="width: 48px; height: 48px; background: rgba(232,101,26,0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
+            <div><div style="font-size: 0.85rem; color: var(--text-muted);">Hours</div><div style="font-size: 1.1rem; font-weight: 700; color: var(--text-dark);">Mon–Fri: 7am – 5pm</div><div style="font-size: 0.9rem; color: var(--text-muted);">Sat: 8am – 1pm</div></div>
+          </div>
+        </div>
       </div>
-
-    </div>
-  </div>
-</main>
+    </section>
+  </main>
+  
+  <footer style="background: var(--bg-pitch); color: rgba(255,255,255,0.7); padding: 5rem 1.5rem 2rem;">
+    <div style="text-align: center;">© 2026 Deckline Constructions. All rights reserved. ABN: 12 345 678 901</div>
+  </footer>
+  <script>window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); }); const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }}); }, { threshold: 0.1 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));</script>
+</body>
+</html>
