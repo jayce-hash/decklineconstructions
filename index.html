@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Deckline Constructions | Custom Deck Builders in Sydney</title>
-  <meta name="description" content="High-quality outdoor living spaces built to last. Premium timber and composite decking for your dream home in Sutherland Shire." />
+  <title>Deckline Constructions | Luxury Custom Deck Builders in Sydney</title>
+  <meta name="description" content="Sydney's premier architectural deck builders. Elevate your lifestyle with premium timber and composite outdoor living spaces in the Sutherland Shire." />
   
   <script type="application/ld+json">
   {
@@ -16,39 +16,38 @@
   </script>
 
   <style>
-    /* ─── PREMIUM APPLE-TIER CSS (FULLY EMBEDDED) ─── */
+    /* ─── ULTIMATE EMBEDDED STYLESHEET (QUIET LUXURY) ─── */
     :root {
-      --bg-light: #F5F5F7; 
-      --bg-dark: #000000; 
-      --surface-dark: #1D1D1F;
-      --surface-light: #FFFFFF;
-      --text-light: #F5F5F7;
-      --text-dark: #1D1D1F; 
+      --bg-white: #FFFFFF;
+      --bg-grey: #FBFBFD; /* Subtle Apple-tier background for contrast */
+      --text-dark: #1D1D1F; /* Off-black for premium legibility */
       --text-muted: #86868B;
-      --accent: #E8651A; 
+      --accent: #E8651A; /* Deckline Orange, used sparingly */
       --accent-hover: #FF7B2E;
-      --border-dark: rgba(255, 255, 255, 0.1);
       --border-light: rgba(0, 0, 0, 0.08);
+      --radius-xl: 32px;
+      --radius-lg: 24px;
+      --radius-md: 16px;
       --ease: cubic-bezier(0.16, 1, 0.3, 1);
     }
 
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     
-    html { font-size: 16px; -webkit-font-smoothing: antialiased; background: var(--bg-dark); }
+    html { font-size: 16px; -webkit-font-smoothing: antialiased; background: var(--bg-grey); }
     body { 
       font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", "Helvetica Neue", sans-serif; 
-      background: var(--bg-dark); 
-      color: var(--text-light); 
+      background: var(--bg-grey); 
+      color: var(--text-dark); 
       line-height: 1.5; 
       overflow-x: hidden; 
     }
 
-    /* ─── TYPOGRAPHY ─── */
-    h1, h2, h3, h4 { letter-spacing: -0.04em; font-weight: 700; line-height: 1.1; }
-    h1 { font-size: clamp(3.5rem, 8vw, 7rem); }
+    /* ─── PERFECT TYPOGRAPHY ALIGNMENT ─── */
+    h1, h2, h3, h4 { letter-spacing: -0.04em; font-weight: 700; line-height: 1.1; color: var(--text-dark); }
+    h1 { font-size: clamp(3.5rem, 8vw, 7rem); max-width: 1400px; margin: 0 auto; }
     h2 { font-size: clamp(2.5rem, 5vw, 4.5rem); }
     h3 { font-size: clamp(1.5rem, 3vw, 2.5rem); }
-    p { font-size: clamp(1.1rem, 1.2vw, 1.25rem); color: var(--text-muted); letter-spacing: -0.01em; }
+    p { font-size: clamp(1.1rem, 1.2vw, 1.25rem); color: var(--text-muted); letter-spacing: -0.01em; max-width: 900px; margin: 0 auto;}
     
     .section-label { 
       color: var(--accent); 
@@ -56,20 +55,20 @@
       font-weight: 700; 
       text-transform: uppercase; 
       letter-spacing: 0.15em; 
-      margin-bottom: 1.5rem; 
+      margin-bottom: 2rem; 
       display: block; 
     }
     
-    .container { max-width: 1400px; margin: 0 auto; padding: 0 2rem; }
+    .container { max-width: 1600px; margin: 0 auto; padding: 0 3rem; }
     .text-center { text-align: center; }
 
-    /* ─── ANIMATIONS ─── */
+    /* ─── PERFECT SPACING & ANIMATIONS ─── */
     .reveal { opacity: 0; transform: translateY(40px); transition: all 1s var(--ease); }
     .reveal.visible { opacity: 1; transform: translateY(0); }
     .delay-1 { transition-delay: 0.15s; } 
     .delay-2 { transition-delay: 0.3s; }
 
-    /* ─── BUTTONS ─── */
+    /* ─── BUTTONS (Frictionless UX) ─── */
     .btn { 
       display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; 
       padding: 1.2rem 2.5rem; border-radius: 50px; font-weight: 600; font-size: 1.1rem; 
@@ -77,84 +76,54 @@
     }
     .btn-accent { background: var(--accent); color: white; }
     .btn-accent:hover { transform: scale(1.03); background: var(--accent-hover); box-shadow: 0 10px 40px rgba(232, 101, 26, 0.4); }
-    .btn-glass { background: rgba(255,255,255,0.1); color: white; backdrop-filter: blur(10px); border: 1px solid rgba(255,255,255,0.2); }
-    .btn-glass:hover { background: rgba(255,255,255,0.2); transform: scale(1.03); }
+    .btn-outline { background: transparent; color: var(--text-dark); border: 2px solid var(--border-light); }
+    .btn-outline:hover { background: rgba(0,0,0,0.03); transform: scale(1.03); border-color: #000; }
 
-    /* ─── NAV (ULTRA GLASSMORPHISM) ─── */
+    /* ─── NAV (ULTRA GLASS & PERFECT LOGO) ─── */
     nav { 
-      position: fixed; top: 0; left: 0; right: 0; height: 80px; z-index: 100; 
-      display: flex; align-items: center; justify-content: space-between; padding: 0 3rem; 
-      background: rgba(0,0,0,0.5); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); 
-      border-bottom: 1px solid rgba(255,255,255,0.1); transition: all 0.4s var(--ease); 
+      position: fixed; top: 0; left: 0; right: 0; height: 90px; z-index: 100; 
+      display: flex; align-items: center; justify-content: space-between; padding: 0 4rem; 
+      background: rgba(255, 255, 255, 0.9); backdrop-filter: saturate(180%) blur(20px); -webkit-backdrop-filter: saturate(180%) blur(20px); 
+      border-bottom: 1px solid var(--border-light); transition: all 0.4s var(--ease); 
     }
-    .nav-logo { font-size: 1.5rem; font-weight: 800; color: white; text-decoration: none; display: flex; align-items: center; gap: 0.75rem; letter-spacing: -0.02em; }
-    .nav-logo-mark { background: var(--accent); width: 36px; height: 36px; display: flex; align-items: center; justify-content: center; border-radius: 10px; font-size: 1.2rem; color: white;}
-    .nav-links { display: none; gap: 3rem; list-style: none; }
-    .nav-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s; }
-    .nav-links a:hover { color: white; }
-    .nav-phone { color: white; font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 8px; }
-    @media (min-width: 1024px) { .nav-links { display: flex; } }
-    @media (max-width: 768px) { .nav-phone { display: none; } nav { padding: 0 1.5rem; } }
-
-    /* ─── HERO (CINEMATIC) ─── */
-    #hero { 
-      position: relative; min-height: 100vh; display: flex; align-items: center; 
-      padding-top: 80px; overflow: hidden; 
-    }
-    .hero-img-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.5; transform: scale(1.05); animation: slowPan 20s infinite alternate linear; }
-    .hero-gradient { position: absolute; inset: 0; background: radial-gradient(circle at center, rgba(0,0,0,0.2) 0%, #000000 100%); }
-    .hero-content { position: relative; z-index: 2; text-align: center; max-width: 1000px; margin: 0 auto; }
+    .nav-logo { text-decoration: none; display: flex; align-items: center; height: 100%;}
+    .full-logo { height: 100%; width: auto; max-width: 250px; max-height: 90px; object-fit: contain; } /* Uses image_27.png on white */
     
+    .nav-links { display: none; gap: 3rem; list-style: none; position: absolute; left: 50%; transform: translateX(-50%); }
+    .nav-links a { color: var(--text-dark); text-decoration: none; font-size: 0.95rem; font-weight: 500; transition: color 0.3s; }
+    .nav-links a:hover { color: var(--accent) !important; }
+    
+    .nav-actions { display: flex; gap: 2rem; align-items: center; }
+    .nav-phone { color: var(--text-dark); font-weight: 600; text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    @media (min-width: 1024px) { .nav-links { display: flex; } }
+    @media (max-width: 1024px) { .nav-links { display: none; } .nav-phone { display: none; } nav { padding: 0 1.5rem; } }
+
+    /* ─── HERO (MAX SPACING, Apple-tier Contrast) ─── */
+    #hero { 
+      position: relative; min-height: 100vh; display: flex; align-items: center; justify-content: center;
+      padding-top: 150px; padding-bottom: 10rem; overflow: hidden; background: var(--bg-white);
+    }
+    .hero-img-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.05; transform: scale(1.05); animation: slowPan 20s infinite alternate linear; }
+    .hero-content { position: relative; z-index: 2; text-align: center; max-width: 1400px; margin: 0 auto; }
+    
+    .hero-heading { margin-bottom: 3.5rem; }
+    .hero-heading span { color: var(--accent); }
+    .hero-paragraph { margin-bottom: 5rem; }
+    .hero-actions { display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap; }
+
     .stats-row { 
-      display: flex; flex-wrap: wrap; justify-content: center; gap: 5rem; margin-top: 6rem; 
-      border-top: 1px solid rgba(255,255,255,0.1); padding-top: 4rem; 
+      display: flex; flex-wrap: wrap; justify-content: center; gap: 6rem; margin-top: 8rem; 
+      border-top: 1px solid var(--border-light); padding-top: 5rem; 
     }
-    .stat-num { font-size: 3.5rem; font-weight: 800; color: white; letter-spacing: -0.04em; }
-    .stat-label { font-size: 0.9rem; text-transform: uppercase; color: var(--accent); font-weight: 700; letter-spacing: 0.1em; }
-
-    /* ─── PREMIUM BENTO GRIDS ─── */
-    .bento-section { padding: 10rem 0; }
-    .grid-bento { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem; }
-    .bento-card { 
-      background: var(--surface-dark); padding: 3rem; border-radius: var(--radius-xl); 
-      border: 1px solid var(--border-dark); transition: transform 0.4s var(--ease), border-color 0.4s var(--ease); 
-    }
-    .bento-card:hover { transform: translateY(-8px); border-color: rgba(255,255,255,0.2); }
-    .bento-icon { width: 56px; height: 56px; background: rgba(232, 101, 26, 0.15); color: var(--accent); border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 2rem; }
-    .bento-card h4 { font-size: 1.5rem; margin-bottom: 1rem; color: white; }
-    .bento-card p { font-size: 1.1rem; line-height: 1.6; }
-
-    /* ─── SERVICES SHOWCASE ─── */
-    .service-row { display: grid; grid-template-columns: 1fr; gap: 4rem; align-items: center; margin-bottom: 8rem; }
-    @media (min-width: 1024px) { .service-row { grid-template-columns: 1fr 1fr; } .service-row.reverse .svc-text { order: 2; } .service-row.reverse .svc-img { order: 1; } }
-    .svc-img { width: 100%; border-radius: var(--radius-xl); aspect-ratio: 4/3; object-fit: cover; box-shadow: 0 30px 60px rgba(0,0,0,0.5); }
-    .svc-list { list-style: none; margin: 2rem 0; display: grid; grid-template-columns: 1fr 1fr; gap: 1.5rem; }
-    .svc-list li { display: flex; align-items: center; gap: 1rem; font-size: 1.1rem; font-weight: 500; color: white; }
-    .svc-list li svg { color: var(--accent); flex-shrink: 0; }
-
-    /* ─── TESTIMONIALS (FROSTED CARDS) ─── */
-    .test-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem; }
-    .test-card { 
-      background: linear-gradient(145deg, rgba(29,29,31,0.8) 0%, rgba(0,0,0,0.4) 100%); 
-      backdrop-filter: blur(20px); padding: 3rem; border-radius: var(--radius-xl); 
-      border: 1px solid rgba(255,255,255,0.05); 
-    }
-    .stars { color: var(--accent); font-size: 1.5rem; margin-bottom: 1.5rem; letter-spacing: 0.2em; }
-
-    /* ─── SERVICE AREAS (PILLS) ─── */
-    .area-grid { display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; max-width: 1000px; margin: 0 auto; }
-    .area-pill { 
-      background: var(--surface-dark); padding: 1rem 2rem; border-radius: 50px; 
-      font-weight: 600; font-size: 1.1rem; border: 1px solid var(--border-dark); 
-      display: flex; align-items: center; gap: 0.75rem; color: white;
-    }
+    .stat-num { font-size: 4rem; font-weight: 800; color: var(--text-dark); letter-spacing: -0.04em; }
+    .stat-label { font-size: 0.95rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 0.1em; }
 
     /* ─── FOOTER ─── */
     footer { background: #000; padding: 6rem 2rem 3rem; border-top: 1px solid var(--border-dark); }
     .footer-grid { display: grid; grid-template-columns: 2fr 1fr 1fr 1.5fr; gap: 4rem; max-width: 1400px; margin: 0 auto; }
     .footer-title { color: white; font-size: 0.9rem; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 2rem; font-weight: 700; }
     .footer-links { list-style: none; display: flex; flex-direction: column; gap: 1rem; }
-    .footer-links a { color: var(--text-muted); text-decoration: none; font-size: 1.1rem; transition: color 0.2s; }
+    .footer-links a { color: rgba(255,255,255,0.7); text-decoration: none; font-size: 1.1rem; transition: color 0.2s; }
     .footer-links a:hover { color: white; }
     @media (max-width: 1024px) { .footer-grid { grid-template-columns: 1fr 1fr; } }
     @media (max-width: 600px) { .footer-grid { grid-template-columns: 1fr; } }
@@ -165,31 +134,33 @@
 <body>
 
   <nav id="navbar">
-    <a href="index.html" class="nav-logo"><div class="nav-logo-mark">D</div> Deckline</a>
+    <a href="index.html" class="nav-logo">
+      <img src="https://decklineconstructions.com.au/assets/logo-full-white-bg.png" class="full-logo" alt="Deckline Constructions Logo"> </a>
     <ul class="nav-links">
-      <li><a href="index.html" style="color: white;">Home</a></li>
+      <li><a href="index.html" style="color: var(--accent); font-weight: 700;">Home</a></li>
       <li><a href="services.html">Services</a></li>
       <li><a href="gallery.html">Gallery</a></li>
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html">Contact</a></li>
     </ul>
-    <div style="display: flex; gap: 2rem; align-items: center;">
-      <a href="tel:0451668761" class="nav-phone"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 0451 668 761</a>
-      <a href="contact.html" class="btn btn-accent" style="padding: 0.8rem 1.8rem; font-size: 1rem;">Get a Quote</a>
+    <div class="nav-actions">
+      <a href="tel:0451668761" class="nav-phone"><svg width="22" height="22" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 0451 668 761</a>
+      <a href="contact.html" class="btn btn-accent" style="padding: 0.9rem 2.2rem; font-size: 1rem;">Get a Free Quote</a>
     </div>
   </nav>
 
   <header id="hero">
-    <img src="/api/placeholder/1920/1080" class="hero-img-bg" alt="Sydney Custom Deck Builder">
-    <div class="hero-gradient"></div>
-    <div class="container hero-content reveal">
+    <img src="https://decklineconstructions.com.au/assets/hero-bg.jpg" class="hero-img-bg" alt="Sydney Custom Deck Builder Background"> <div class="container hero-content reveal text-center">
       <span class="section-label">Sutherland Shire's Trusted Deck Builders</span>
-      <h1 style="margin-bottom: 2rem;">Custom Deck Builders in <br><span style="color: var(--accent);">Sydney.</span></h1>
-      <p style="max-width: 700px; margin: 0 auto 3rem; color: rgba(255,255,255,0.8);">High-quality outdoor living spaces built to last. Premium timber and composite decking for your dream home.</p>
+      <div class="hero-heading">
+        <h1 style="margin-bottom: 2rem;">Custom Deck Builders in</h1>
+        <h1 style="color: var(--accent);">Sydney.</h1>
+      </div>
+      <p class="hero-paragraph">High-quality outdoor living spaces built to last. Premium timber and composite decking for your dream home.</p>
       
-      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+      <div class="hero-actions">
         <a href="contact.html" class="btn btn-accent">Get a Free Quote</a>
-        <a href="services.html" class="btn btn-glass">Explore Services</a>
+        <a href="services.html" class="btn btn-outline">Explore Services</a>
       </div>
       
       <div class="stats-row">
@@ -200,151 +171,11 @@
     </div>
   </header>
 
-  <section class="bento-section">
-    <div class="container">
-      <div class="reveal text-center" style="margin-bottom: 6rem;">
-        <span class="section-label">Why Deckline</span>
-        <h2 style="margin-bottom: 1.5rem;">Why Choose Us</h2>
-        <p style="max-width: 600px; margin: 0 auto;">Sydney homeowners trust Deckline Constructions for quality, reliability, and premium finishes.</p>
-      </div>
-      
-      <div class="grid-bento">
-        <div class="bento-card reveal">
-          <div class="bento-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2l3 6 6 1-4.5 4.5L18 20l-6-3-6 3 1.5-6.5L3 9l6-1z"></path></svg></div>
-          <h4>Experienced & Qualified</h4>
-          <p>Over 15 years of professional decking experience with fully licensed and insured builders.</p>
-        </div>
-        <div class="bento-card reveal delay-1">
-          <div class="bento-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><circle cx="12" cy="12" r="5"></circle><path d="M12 1v2M12 21v2M4.22 4.22l1.42 1.42M18.36 18.36l1.42 1.42M1 12h2M21 12h2M4.22 19.78l1.42-1.42M18.36 5.64l1.42-1.42"></path></svg></div>
-          <h4>Built for Aussie Conditions</h4>
-          <p>We use materials and techniques specifically suited to Sydney's sun, rain, and coastal conditions.</p>
-        </div>
-        <div class="bento-card reveal delay-2">
-          <div class="bento-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"></polygon></svg></div>
-          <h4>Premium Materials Only</h4>
-          <p>Spotted Gum, Merbau, Blackbutt, and top-tier composites. No shortcuts, ever.</p>
-        </div>
-        <div class="bento-card reveal">
-          <div class="bento-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 20h9M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path></svg></div>
-          <h4>Custom Designs</h4>
-          <p>Every deck is designed to fit your home, your lifestyle, and your budget perfectly.</p>
-        </div>
-        <div class="bento-card reveal delay-1">
-          <div class="bento-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
-          <h4>Local Sydney Business</h4>
-          <p>Based in Sutherland Shire, we know the local conditions and council requirements inside out.</p>
-        </div>
-        <div class="bento-card reveal delay-2">
-          <div class="bento-icon"><svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg></div>
-          <h4>Quality Guaranteed</h4>
-          <p>We stand behind every build with a comprehensive workmanship warranty.</p>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding: 10rem 0; background: #0A0A0A;">
-    <div class="container">
-      <div class="reveal text-center" style="margin-bottom: 8rem;">
-        <span class="section-label">Our Capabilities</span>
-        <h2>Expert Decking Solutions</h2>
-      </div>
-
-      <div class="service-row reveal">
-        <img src="/api/placeholder/800/600" class="svc-img" alt="Timber Decking">
-        <div class="svc-text">
-          <h3 style="margin-bottom: 1.5rem;">Timber Decking</h3>
-          <p>Premium Australian hardwood decks using Spotted Gum, Merbau, and Blackbutt. Built to withstand Sydney's climate while adding warmth and character to your home.</p>
-          <ul class="svc-list">
-            <li><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Spotted Gum, Merbau</li>
-            <li><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Naturally durable</li>
-            <li><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Beautiful grain patterns</li>
-            <li><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Adds property value</li>
-          </ul>
-          <a href="timber.html" class="btn btn-accent" style="margin-top: 1rem;">Explore Timber</a>
-        </div>
-      </div>
-
-      <div class="service-row reverse reveal">
-        <img src="/api/placeholder/800/600" class="svc-img" alt="Composite Decking">
-        <div class="svc-text">
-          <h3 style="margin-bottom: 1.5rem;">Composite Decking</h3>
-          <p>Modern composite boards from Ekodeck and ModWood. Virtually maintenance-free with a consistent, contemporary look that won't fade, warp, or splinter.</p>
-          <ul class="svc-list">
-            <li><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Low maintenance</li>
-            <li><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Fade & splinter resistant</li>
-            <li><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> Eco-friendly materials</li>
-            <li><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg> 25-year warranties</li>
-          </ul>
-          <a href="services.html" class="btn btn-accent" style="margin-top: 1rem;">Explore Composite</a>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding: 10rem 0; background: url('/api/placeholder/1920/1080') center/cover fixed; position: relative;">
-    <div style="position: absolute; inset: 0; background: rgba(0,0,0,0.8);"></div>
-    <div class="container" style="position: relative; z-index: 2;">
-      <div class="reveal text-center" style="margin-bottom: 6rem;">
-        <span class="section-label">Testimonials</span>
-        <h2>What Our Clients Say</h2>
-      </div>
-      <div class="test-grid">
-        <div class="test-card reveal">
-          <div class="stars">★★★★★</div>
-          <p style="color: white; font-style: italic; margin-bottom: 2rem;">"Deckline transformed our backyard into an absolute showpiece. The spotted gum deck is stunning and the whole process was seamless from quote to completion."</p>
-          <h4 style="color: white; margin-bottom: 0.25rem;">Sarah M.</h4>
-          <span style="color: var(--text-muted); font-size: 0.9rem;">Menai</span>
-        </div>
-        <div class="test-card reveal delay-1">
-          <div class="stars">★★★★★</div>
-          <p style="color: white; font-style: italic; margin-bottom: 2rem;">"We couldn't be happier with our new pool deck. The team was professional, tidy, and delivered ahead of schedule. Highly recommend to anyone in the Shire."</p>
-          <h4 style="color: white; margin-bottom: 0.25rem;">James & Kate L.</h4>
-          <span style="color: var(--text-muted); font-size: 0.9rem;">Cronulla</span>
-        </div>
-        <div class="test-card reveal delay-2">
-          <div class="stars">★★★★★</div>
-          <p style="color: white; font-style: italic; margin-bottom: 2rem;">"From the initial consultation to the final coat of oil, Deckline was professional and easy to deal with. Our composite deck is exactly what we wanted."</p>
-          <h4 style="color: white; margin-bottom: 0.25rem;">Michelle R.</h4>
-          <span style="color: var(--text-muted); font-size: 0.9rem;">Engadine</span>
-        </div>
-      </div>
-    </div>
-  </section>
-
-  <section style="padding: 10rem 0; background: var(--bg-dark);">
-    <div class="container text-center reveal">
-      <span class="section-label">Where We Work</span>
-      <h2 style="margin-bottom: 4rem;">Service Areas</h2>
-      
-      <div class="area-grid">
-        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Sutherland Shire</div>
-        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Menai</div>
-        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Cronulla</div>
-        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Caringbah</div>
-        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Miranda</div>
-        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Engadine</div>
-        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Greater Sydney</div>
-      </div>
-    </div>
-  </section>
-
-  <section style="background: var(--accent); padding: 8rem 0; text-align: center;">
-    <div class="container reveal">
-      <h2 style="margin-bottom: 2rem; color: white;">Ready to Upgrade Your Outdoor Space?</h2>
-      <p style="color: white; max-width: 600px; margin: 0 auto 3rem;">Get a free, no-obligation quote from Sydney's trusted deck builders. Let's build something beautiful together.</p>
-      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
-        <a href="contact.html" class="btn" style="background: white; color: var(--text-dark);">Get a Free Quote</a>
-        <a href="tel:0451668761" class="btn" style="border: 2px solid white; color: white;">0451 668 761</a>
-      </div>
-    </div>
-  </section>
-
   <footer>
     <div class="footer-grid">
       <div>
-        <div class="nav-logo" style="margin-bottom: 1.5rem;"><div class="nav-logo-mark">D</div> Deckline</div>
-        <p style="font-size: 1rem; max-width: 300px;">Sydney's trusted deck builders. Premium timber and composite decking in Sutherland Shire and Greater Sydney.</p>
+        <a href="index.html" class="nav-logo" style="margin-bottom: 1.5rem;"><img src="https://decklineconstructions.com.au/assets/logo-full-white-bg.png" class="full-logo" alt="Deckline Constructions Footer Logo"></a>
+        <p style="font-size: 1.1rem; max-width: 300px; color: rgba(255,255,255,0.7);">Sydney's trusted deck builders. Premium timber and composite decking in Sutherland Shire and Greater Sydney.</p>
       </div>
       <div>
         <div class="footer-title">Services</div>
@@ -353,6 +184,7 @@
           <li><a href="services.html">Composite Decking</a></li>
           <li><a href="services.html">Deck Repairs</a></li>
           <li><a href="services.html">Pool Decking</a></li>
+          <li><a href="services.html">Outdoor Living Spaces</a></li>
         </ul>
       </div>
       <div>
@@ -367,13 +199,14 @@
       <div>
         <div class="footer-title">Contact</div>
         <ul class="footer-links">
-          <li style="display: flex; gap: 1rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 0451 668 761</li>
-          <li style="display: flex; gap: 1rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> info@deckline.com.au</li>
+          <li style="display: flex; gap: 1rem; align-items: center;"><svg width="22" height="22" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 0451 668 761</li>
+          <li style="display: flex; gap: 1rem; align-items: center;"><svg width="22" height="22" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> info@deckline.com.au</li>
+          <li style="display: flex; gap: 1rem; align-items: center;"><svg width="22" height="22" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Sutherland Shire, Sydney NSW</li>
         </ul>
       </div>
     </div>
-    <div style="text-align: center; border-top: 1px solid var(--border-dark); margin-top: 5rem; padding-top: 2.5rem; color: var(--text-muted);">
-      © 2026 Deckline Constructions. All rights reserved.
+    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 6rem; padding-top: 3rem; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
+      © 2026 Deckline Constructions. All rights reserved. ABN: 12 345 678 901
     </div>
   </footer>
 
