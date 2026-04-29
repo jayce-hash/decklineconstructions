@@ -1,165 +1,54 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth">
+<html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Timber Decking Sydney | Deckline Constructions</title>
-  
-  <style>
-    :root {
-      --bg-light: #FBFBFD;
-      --bg-dark: #1D1D1F;
-      --bg-pitch: #000000;
-      --surface-light: #FFFFFF;
-      --surface-dark: #2C2C2E;
-      --text-dark: #1D1D1F;
-      --text-muted: #86868B;
-      --accent: #E8651A;
-      --accent-hover: #FF7B2E;
-      --border-light: rgba(0,0,0,0.08);
-      --radius-lg: 24px;
-      --radius-md: 16px;
-      --ease: cubic-bezier(0.16, 1, 0.3, 1);
-    }
-
-    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
-    html { font-size: 16px; -webkit-font-smoothing: antialiased; }
-    body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; background: var(--bg-light); color: var(--text-dark); line-height: 1.6; overflow-x: hidden; }
-
-    h1, h2, h3, h4 { letter-spacing: -0.04em; font-weight: 700; line-height: 1.1; }
-    .container { max-width: 1200px; margin: 0 auto; padding: 0 24px; }
-    .reveal { opacity: 0; transform: translateY(30px); transition: all 0.8s var(--ease); }
-    .reveal.visible { opacity: 1; transform: translateY(0); }
-
-    .btn-solid { background: var(--text-dark); color: white; padding: 16px 32px; border-radius: 40px; font-size: 15px; font-weight: 600; text-decoration: none; display: inline-flex; align-items: center; justify-content: center; gap: 8px; cursor: pointer; border: none; transition: all 0.3s var(--ease); }
-    .btn-solid:hover { transform: scale(1.02); background: #000; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-    .btn-accent { background: var(--accent); color: white; }
-    .btn-accent:hover { background: var(--accent-hover); box-shadow: 0 10px 30px rgba(232, 101, 26, 0.3); }
-
-    /* NAV */
-    nav { position: fixed; top: 0; left: 0; right: 0; height: 72px; z-index: 100; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; background: rgba(29, 29, 31, 0.5); backdrop-filter: blur(20px); -webkit-backdrop-filter: blur(20px); border-bottom: 1px solid rgba(255,255,255,0.1); transition: all 0.3s var(--ease); }
-    nav.scrolled { background: rgba(251, 251, 253, 0.85); border-bottom: 1px solid var(--border-light); }
-    .nav-logo { font-size: 20px; font-weight: 800; color: white; text-decoration: none; display: flex; align-items: center; gap: 8px; transition: color 0.3s;}
-    nav.scrolled .nav-logo { color: var(--text-dark); }
-    .nav-logo-mark { background: var(--accent); color: white; width: 32px; height: 32px; display: flex; align-items: center; justify-content: center; border-radius: 8px; font-size: 16px;}
-    .nav-links { display: flex; gap: 32px; list-style: none; }
-    .nav-links a { color: white; text-decoration: none; font-size: 14px; font-weight: 500; opacity: 0.8; transition: opacity 0.2s, color 0.3s; }
-    nav.scrolled .nav-links a { color: var(--text-dark); }
-    .nav-links a:hover { opacity: 1; }
-    @media (max-width: 768px) { .nav-links { display: none; } nav { padding: 0 24px; } }
-
-    /* EDITORIAL HERO */
-    #service-hero { position: relative; height: 70vh; min-height: 500px; display: flex; align-items: flex-end; padding-bottom: 80px; background: var(--bg-pitch); overflow: hidden; }
-    .hero-img { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.6; transform: scale(1.05); animation: slowZoom 20s linear infinite alternate; }
-    .hero-gradient { position: absolute; inset: 0; background: linear-gradient(to top, rgba(0,0,0,0.9) 0%, rgba(0,0,0,0.3) 50%, transparent 100%); }
-    .hero-content { position: relative; z-index: 2; width: 100%; }
-    .service-icon-box { width: 56px; height: 56px; background: var(--accent); color: white; border-radius: 16px; display: flex; align-items: center; justify-content: center; margin-bottom: 24px; }
-
-    /* MAIN SPLIT */
-    #service-content { padding: 80px 0 120px; background: var(--bg-light); position: relative; }
-    .content-grid { display: grid; grid-template-columns: 1fr; gap: 64px; align-items: start; }
-    @media (min-width: 900px) { .content-grid { grid-template-columns: 1.5fr 1fr; } }
-    
-    .story-text { font-size: 20px; color: var(--text-dark); margin-bottom: 24px; line-height: 1.6; font-weight: 500;}
-    .story-subtext { font-size: 17px; color: var(--text-muted); margin-bottom: 48px; line-height: 1.7; }
-    .features-list { display: flex; flex-direction: column; gap: 16px; }
-    .feature-item { display: flex; align-items: center; gap: 16px; background: var(--surface-light); padding: 20px 24px; border-radius: var(--radius-md); border: 1px solid var(--border-light); }
-    .check-icon { color: var(--accent); flex-shrink: 0; }
-    .feature-item p { font-size: 16px; font-weight: 600; color: var(--text-dark); margin: 0; }
-
-    /* STICKY CARD */
-    .sticky-card { position: sticky; top: 120px; background: var(--surface-light); padding: 40px; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: 0 30px 60px rgba(0,0,0,0.05); text-align: center; }
-    .sticky-card h3 { font-size: 24px; margin-bottom: 16px; }
-    .sticky-card p { color: var(--text-muted); font-size: 15px; margin-bottom: 32px; }
-
-    @keyframes slowZoom { from { transform: scale(1); } to { transform: scale(1.1); } }
-  </style>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
+  <nav id="navbar"><a href="index.html" class="nav-logo"><div class="nav-logo-mark">D</div> Deckline</a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="services.html" style="color: var(--accent);">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul><a href="contact.html" class="btn btn-accent" style="padding: 0.75rem 1.5rem;">Get a Quote</a></nav>
 
-  <nav id="navbar">
-    <a href="index.html" class="nav-logo">
-      <div class="nav-logo-mark">D</div> Deckline
-    </a>
-    <ul class="nav-links">
-      <li><a href="index.html">Home</a></li>
-      <li><a href="services.html">Services</a></li>
-      <li><a href="gallery.html">Gallery</a></li>
-      <li><a href="about.html">About</a></li>
-    </ul>
-    <a href="contact.html" class="btn-solid btn-accent" style="padding: 10px 20px;">Get a Quote</a>
-  </nav>
-
-  <header id="service-hero">
-    <img src="/api/placeholder/1920/1080" alt="Timber Decking Sydney" class="hero-img">
-    <div class="hero-gradient"></div>
-    <div class="container hero-content reveal">
-      <div class="service-icon-box">
-        <svg width="28" height="28" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M12 2L3 9l9 7 9-7-9-7z"></path></svg>
+  <main style="padding-top: 80px;">
+    <section class="hero-global" style="height: 60vh; min-height: 500px;">
+      <img src="/api/placeholder/1920/1080" class="hero-img-bg" alt="Timber Decking Sydney">
+      <div class="hero-gradient" style="background: linear-gradient(180deg, rgba(0,0,0,0.6) 0%, var(--bg-pitch) 100%);"></div>
+      <div class="container hero-content reveal text-center">
+        <h1 style="margin-bottom: 1rem;">Timber Decking Sydney</h1>
+        <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.8); font-size: 1.25rem;">Premium Australian Hardwood Decks</p>
       </div>
-      <h1 style="color: white; font-size: clamp(40px, 6vw, 72px); margin-bottom: 16px;">Timber Decking</h1>
-      <p style="color: rgba(255,255,255,0.8); font-size: 20px; font-weight: 500;">Premium Australian Hardwood Decks</p>
-    </div>
-  </header>
+    </section>
 
-  <section id="service-content">
-    <div class="container content-grid">
-      
-      <div class="reveal">
-        <p class="story-text">Nothing beats the natural warmth and beauty of real timber. At Deckline Constructions, we specialise in premium Australian hardwood decking using species like Spotted Gum, Merbau, and Blackbutt — all chosen for their durability and stunning natural grain.</p>
-        <p class="story-subtext">Our timber decks are designed to handle Sydney's harsh UV, moisture, and temperature fluctuations. Whether you want a ground-level entertaining area or an elevated deck with panoramic views, we tailor every build to your home's unique character and your family's lifestyle.</p>
-        
-        <h2 style="font-size: 32px; margin-bottom: 32px; padding-top: 24px; border-top: 1px solid var(--border-light);">What's Included</h2>
-        
-        <div class="features-list">
-          <div class="feature-item">
-            <svg class="check-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <p>Spotted Gum, Merbau & Blackbutt options</p>
+    <section style="padding: 6rem 0; background: var(--bg-light);">
+      <div class="container" style="max-width: 900px;">
+        <div class="reveal">
+          <p style="font-size: 1.25rem; color: var(--text-dark); margin-bottom: 1.5rem; font-weight: 500;">Nothing beats the natural warmth and beauty of real timber. At Deckline Constructions, we specialise in premium Australian hardwood decking using species like Spotted Gum, Merbau, and Blackbutt — all chosen for their durability and stunning natural grain.</p>
+          <p style="font-size: 1.1rem; margin-bottom: 4rem;">Our timber decks are designed to handle Sydney's harsh UV, moisture, and temperature fluctuations. Whether you want a ground-level entertaining area or an elevated deck with panoramic views, we tailor every build to your home's unique character and your family's lifestyle. Every board is hand-selected, every joint is precision-cut, and every finish is applied with care.</p>
+        </div>
+
+        <div class="reveal delay-1">
+          <h2 style="margin-bottom: 2rem;">What's Included</h2>
+          <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem; margin-bottom: 4rem;">
+            <div class="card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;"><span style="color: var(--accent);">✔</span><p style="margin:0; color: var(--text-dark); font-weight: 600;">Spotted Gum, Merbau & Blackbutt options</p></div>
+            <div class="card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;"><span style="color: var(--accent);">✔</span><p style="margin:0; color: var(--text-dark); font-weight: 600;">Naturally durable & termite resistant</p></div>
+            <div class="card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;"><span style="color: var(--accent);">✔</span><p style="margin:0; color: var(--text-dark); font-weight: 600;">Beautiful natural grain & colour variation</p></div>
+            <div class="card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;"><span style="color: var(--accent);">✔</span><p style="margin:0; color: var(--text-dark); font-weight: 600;">Built for Sydney's climate conditions</p></div>
+            <div class="card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;"><span style="color: var(--accent);">✔</span><p style="margin:0; color: var(--text-dark); font-weight: 600;">Council-approved structural designs</p></div>
+            <div class="card" style="padding: 1.5rem; display: flex; align-items: center; gap: 1rem;"><span style="color: var(--accent);">✔</span><p style="margin:0; color: var(--text-dark); font-weight: 600;">Professional oiling & finishing included</p></div>
           </div>
-          <div class="feature-item">
-            <svg class="check-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <p>Naturally durable & termite resistant</p>
-          </div>
-          <div class="feature-item">
-            <svg class="check-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <p>Built for Sydney's climate conditions</p>
-          </div>
-          <div class="feature-item">
-            <svg class="check-icon" width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12"></polyline></svg>
-            <p>Council-approved structural designs</p>
+          
+          <div style="display: flex; gap: 1rem;">
+            <a href="contact.html" class="btn btn-accent">Get a Free Quote &rarr;</a>
+            <a href="tel:0451668761" class="btn btn-outline" style="border-color: var(--border-light); color: var(--text-dark);">Call 0451 668 761</a>
           </div>
         </div>
       </div>
-
-      <div class="reveal delay-1">
-        <div class="sticky-card">
-          <h3>Ready to build?</h3>
-          <p>Get a precise, itemized quote for your timber deck. No hidden fees, no surprises.</p>
-          <a href="contact.html" class="btn-solid btn-accent" style="width: 100%;">Get a Free Quote &rarr;</a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <footer style="background: var(--bg-dark); padding: 4rem 1.5rem; text-align: center;">
-    <div class="nav-logo" style="justify-content: center; margin-bottom: 1.5rem; color: white;">
-      <div class="nav-logo-mark">D</div> Deckline
-    </div>
-    <p style="font-size: 0.85rem; color: rgba(255,255,255,0.7);">© 2026 Deckline Constructions. Sutherland Shire, Sydney NSW.</p>
+    </section>
+  </main>
+  
+  <footer style="background: var(--bg-pitch); color: rgba(255,255,255,0.7); padding: 5rem 1.5rem 2rem;">
+    <div style="text-align: center;">© 2026 Deckline Constructions. All rights reserved. ABN: 12 345 678 901</div>
   </footer>
-
-  <script>
-    const nav = document.getElementById('navbar');
-    window.addEventListener('scroll', () => {
-      if (window.scrollY > 50) nav.classList.add('scrolled');
-      else nav.classList.remove('scrolled');
-    });
-
-    const observer = new IntersectionObserver((entries) => {
-      entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }});
-    }, { threshold: 0.1 });
-    document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
-  </script>
+  <script>window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); }); const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }}); }, { threshold: 0.1 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));</script>
 </body>
 </html>
