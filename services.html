@@ -1,50 +1,110 @@
-<main style="padding-top: 80px; background: var(--bg-light); min-height: 100vh;">
-  <header style="background: var(--bg-dark); color: white; padding: 6rem 1.5rem; text-align: center;">
-    <div class="container reveal">
-      <span class="section-label">Our Capabilities</span>
-      <h1 style="margin-bottom: 1rem;">Engineering the Outdoors.</h1>
-      <p style="max-width: 600px; margin: 0 auto;">From premium architectural timber to next-gen composites, we deliver bespoke decking solutions tailored to your lifestyle.</p>
-    </div>
-  </header>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Our Services | Deckline Constructions</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <nav id="navbar"><a href="index.html" class="nav-logo"><div class="nav-logo-mark">D</div> Deckline</a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="services.html" style="color: var(--accent);">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul><a href="contact.html" class="btn btn-accent" style="padding: 0.75rem 1.5rem;">Get a Quote</a></nav>
 
-  <section style="padding: 6rem 0;">
-    <div class="container">
-      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2rem;">
+  <main style="padding-top: 80px;">
+    <section class="hero-global" style="height: 50vh; min-height: 400px;">
+      <div class="hero-gradient" style="background: var(--bg-pitch);"></div>
+      <div class="container hero-content reveal text-center">
+        <span class="section-label">What We Do</span>
+        <h1 style="margin-bottom: 1rem;">Our Decking Services</h1>
+        <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.8);">From premium timber to modern composites, we offer complete decking solutions for homes across Sydney's Sutherland Shire.</p>
+      </div>
+    </section>
+
+    <section style="padding: 8rem 0;">
+      <div class="container" style="display: grid; grid-template-columns: 1fr; gap: 6rem;">
         
-        <a href="timber.html" class="reveal" style="text-decoration: none; color: var(--text-dark);">
-          <div style="background: var(--surface-light); border-radius: var(--radius-lg); border: 1px solid var(--border-light); overflow: hidden; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-            <img src="/api/placeholder/600/400" alt="Timber Decking" style="width: 100%; height: 250px; object-fit: cover;">
-            <div style="padding: 2rem;">
-              <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Timber Decking</h3>
-              <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Premium Spotted Gum & Merbau.</p>
-              <span style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">Explore Timber &rarr;</span>
-            </div>
+        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
+          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+          <div>
+            <h2 style="margin-bottom: 1rem;">Timber Decking</h2>
+            <p style="margin-bottom: 2rem;">Premium Australian hardwood decks using Spotted Gum, Merbau, and Blackbutt. Built to withstand Sydney's climate while adding warmth and character to your home.</p>
+            <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Spotted Gum, Merbau, Blackbutt</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Naturally durable hardwoods</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Beautiful natural grain patterns</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Increases property value</li>
+            </ul>
+            <a href="timber.html" class="btn btn-accent">Learn More</a>
           </div>
-        </a>
+        </div>
 
-        <a href="composite.html" class="reveal delay-1" style="text-decoration: none; color: var(--text-dark);">
-          <div style="background: var(--surface-light); border-radius: var(--radius-lg); border: 1px solid var(--border-light); overflow: hidden; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-            <img src="/api/placeholder/600/400" alt="Composite Decking" style="width: 100%; height: 250px; object-fit: cover;">
-            <div style="padding: 2rem;">
-              <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Composite Decking</h3>
-              <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Zero maintenance, 25-year warranties.</p>
-              <span style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">Explore Composite &rarr;</span>
-            </div>
+        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
+          <div style="order: 2;">
+            <h2 style="margin-bottom: 1rem;">Composite Decking</h2>
+            <p style="margin-bottom: 2rem;">Modern composite boards from Ekodeck and ModWood. Virtually maintenance-free with a consistent, contemporary look that won't fade, warp, or splinter.</p>
+            <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Low maintenance</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Fade & splinter resistant</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Eco-friendly materials</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> 25-year warranty options</li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent">Get a Quote</a>
           </div>
-        </a>
+          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); order: 1;">
+        </div>
 
-        <a href="pool.html" class="reveal delay-2" style="text-decoration: none; color: var(--text-dark);">
-          <div style="background: var(--surface-light); border-radius: var(--radius-lg); border: 1px solid var(--border-light); overflow: hidden; transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease);" onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 20px 40px rgba(0,0,0,0.05)';" onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='none';">
-            <img src="/api/placeholder/600/400" alt="Pool Decking" style="width: 100%; height: 250px; object-fit: cover;">
-            <div style="padding: 2rem;">
-              <h3 style="font-size: 1.5rem; margin-bottom: 0.5rem;">Poolside Decking</h3>
-              <p style="font-size: 0.95rem; margin-bottom: 1.5rem;">Slip-resistant, heat-dissipating borders.</p>
-              <span style="color: var(--accent); font-weight: 600; font-size: 0.9rem;">Explore Poolside &rarr;</span>
-            </div>
+        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
+          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+          <div>
+            <h2 style="margin-bottom: 1rem;">Deck Repairs & Restorations</h2>
+            <p style="margin-bottom: 2rem;">Bring your tired, weathered deck back to its former glory. From board replacements to complete structural overhauls, we handle it all.</p>
+            <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Board replacements</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Structural repairs</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Sanding & re-oiling</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Balustrade repairs</li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent">Get a Quote</a>
           </div>
-        </a>
+        </div>
+
+        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
+          <div style="order: 2;">
+            <h2 style="margin-bottom: 1rem;">Pool Decking</h2>
+            <p style="margin-bottom: 2rem;">Slip-resistant, heat-treated pool surrounds that look stunning year-round. Designed for safety and style around your pool area.</p>
+            <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Slip-resistant surfaces</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Heat-treated timber</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Drainage solutions</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Council-compliant builds</li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent">Get a Quote</a>
+          </div>
+          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); order: 1;">
+        </div>
+
+        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
+          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+          <div>
+            <h2 style="margin-bottom: 1rem;">Custom Outdoor Living Spaces</h2>
+            <p style="margin-bottom: 2rem;">Complete outdoor entertainment areas with integrated seating, pergolas, planters, and feature walls. Your backyard, reimagined.</p>
+            <ul style="list-style: none; display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem;">
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Integrated seating & storage</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Pergolas & shade structures</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Outdoor kitchens</li>
+              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Feature walls & planters</li>
+            </ul>
+            <a href="contact.html" class="btn btn-accent">Get a Quote</a>
+          </div>
+        </div>
 
       </div>
     </div>
   </section>
-</main>
+  </main>
+  
+  <footer style="background: var(--bg-pitch); color: rgba(255,255,255,0.7); padding: 5rem 1.5rem 2rem;">
+    <div style="text-align: center;">© 2026 Deckline Constructions. All rights reserved. ABN: 12 345 678 901</div>
+  </footer>
+  <script>window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); }); const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }}); }, { threshold: 0.1 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));</script>
+</body>
+</html>
