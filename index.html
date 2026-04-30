@@ -369,33 +369,35 @@
     </div>
   </section>
 
-  <footer style="background: #0A0A0A; padding: 5rem 2rem 2rem; color: rgba(255,255,255,0.7);">
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); gap: 3rem; max-width: 1200px; margin: 0 auto;">
+<footer>
+    <div class="footer-grid">
       <div>
         <a href="index.html" style="display: block; margin-bottom: 1.5rem;">
-          <img src="DecklineLogo.png" style="max-width: 180px; height: auto;" alt="Deckline Logo" onerror="this.outerHTML='<span style=\'color:white; font-size:1.5rem; font-weight:800;\'>Deckline</span>'">
+          <img src="DecklineLogo.png" style="max-width: 180px; height: auto;" alt="Deckline Logo" onerror="this.outerHTML='<span style=\'color:var(--text-dark); font-size:1.5rem; font-weight:800;\'>Deckline</span>'">
         </a>
         <p style="font-size: 0.95rem;">Sydney's trusted deck builders. Premium timber and composite decking.</p>
       </div>
       <div>
-        <div style="color: white; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1.5rem; font-weight: 700;">Services</div>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
-          <li><a href="services.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Timber Decking</a></li>
-          <li><a href="services.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Composite Decking</a></li>
-          <li><a href="services.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Deck Repairs</a></li>
-          <li><a href="services.html" style="color: rgba(255,255,255,0.7); text-decoration: none;">Pool Decking</a></li>
+        <div class="footer-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="services.html#timber">Timber Decking</a></li>
+          <li><a href="services.html#composite">Composite Decking</a></li>
+          <li><a href="services.html#repairs">Deck Repairs</a></li>
+          <li><a href="services.html#pool">Pool Decking</a></li>
         </ul>
       </div>
       <div>
-        <div style="color: white; font-size: 0.8rem; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1.5rem; font-weight: 700;">Contact</div>
-        <ul style="list-style: none; display: flex; flex-direction: column; gap: 0.75rem;">
-          <li><a href="tel:0451668761" style="color: rgba(255,255,255,0.7); text-decoration: none;">0451 668 761</a></li>
-          <li><a href="mailto:info@deckline.com.au" style="color: rgba(255,255,255,0.7); text-decoration: none;">info@deckline.com.au</a></li>
-          <li style="color: rgba(255,255,255,0.7);">Sutherland Shire, NSW</li>
+        <div class="footer-title">Contact</div>
+        <ul class="footer-links">
+          <li><a href="tel:0451668761">0451 668 761</a></li>
+          <li><a href="mailto:info@deckline.com.au">info@deckline.com.au</a></li>
+          <li>Sutherland Shire, NSW</li>
         </ul>
       </div>
     </div>
-    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 4rem; padding-top: 2rem; font-size: 0.85rem;">© 2026 Deckline Constructions.</div>
+    <div style="text-align: center; border-top: 1px solid var(--border-light); margin-top: 4rem; padding-top: 2rem; font-size: 0.85rem; color: var(--text-muted);">
+      © 2026 Deckline Constructions. All rights reserved.
+    </div>
   </footer>
 
   <script>
