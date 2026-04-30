@@ -6,10 +6,9 @@
   <title>Contact Us | Deckline Constructions</title>
   </head>
 <body>
+
   <nav id="navbar">
-    <a href="index.html" class="nav-logo">
-      <img src="DecklineLogo.png" class="full-logo" alt="Deckline Constructions" onerror="this.outerHTML='<span style=\'color:var(--text-dark); font-size:1.5rem; font-weight:800;\'>Deckline</span>'">
-    </a>
+    <a href="index.html" class="nav-logo"><img src="DecklineLogo.png" class="full-logo" alt="Deckline Constructions"></a>
     <ul class="nav-links">
       <li><a href="index.html">Home</a></li>
       <li><a href="services.html">Services</a></li>
@@ -17,10 +16,7 @@
       <li><a href="about.html">About</a></li>
       <li><a href="contact.html" style="color: var(--accent);">Contact</a></li>
     </ul>
-    <div class="nav-actions">
-      <a href="tel:0451668761" class="nav-phone"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 0451 668 761</a>
-      <a href="contact.html" class="btn btn-accent" style="padding: 0.8rem 2rem;">Get a Free Quote</a>
-    </div>
+    <div class="nav-actions"><a href="tel:0451668761" class="nav-phone">0451 668 761</a><a href="contact.html" class="btn btn-accent" style="padding: 0.75rem 1.5rem;">Get a Quote</a></div>
   </nav>
 
   <header style="padding-top: 180px; padding-bottom: 4rem; background: var(--bg-white);">
@@ -37,86 +33,43 @@
       <div class="card reveal">
         <form onsubmit="event.preventDefault(); this.querySelector('button').textContent = 'Message Sent ✓'; this.querySelector('button').style.background = '#28a745';">
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
-            <div>
-              <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.5rem; color: var(--text-dark);">Full Name *</label>
-              <input type="text" placeholder="John Smith" required style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'">
-            </div>
-            <div>
-              <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.5rem; color: var(--text-dark);">Phone Number *</label>
-              <input type="tel" placeholder="0412 345 678" required style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'">
-            </div>
+            <div><label style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; display: block;">Full Name *</label><input type="text" placeholder="John Smith" required style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'"></div>
+            <div><label style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; display: block;">Phone Number *</label><input type="tel" placeholder="0412 345 678" required style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'"></div>
           </div>
-          
           <div style="display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 1rem;">
-            <div>
-              <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.5rem; color: var(--text-dark);">Email</label>
-              <input type="email" placeholder="john@example.com" style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'">
-            </div>
-            <div>
-              <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.5rem; color: var(--text-dark);">Suburb</label>
-              <input type="text" placeholder="e.g. Menai" style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'">
-            </div>
+            <div><label style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; display: block;">Email</label><input type="email" placeholder="john@example.com" style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'"></div>
+            <div><label style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; display: block;">Suburb</label><input type="text" placeholder="e.g. Menai" style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; outline: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'"></div>
           </div>
-          
           <div style="margin-bottom: 1rem;">
-            <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.5rem; color: var(--text-dark);">Service Type</label>
+            <label style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; display: block;">Service Type</label>
             <select style="width: 100%; background: var(--bg-white); border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; outline: none; appearance: none;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'">
-              <option value="" disabled selected>What do you need?</option>
-              <option value="timber">Timber Decking</option>
-              <option value="composite">Composite Decking</option>
-              <option value="repairs">Deck Repairs & Restorations</option>
-              <option value="pool">Pool Decking</option>
-              <option value="outdoor">Custom Outdoor Living</option>
+              <option value="" disabled selected>What do you need?</option><option value="timber">Timber Decking</option><option value="composite">Composite Decking</option><option value="repairs">Deck Repairs</option><option value="pool">Pool Decking</option><option value="outdoor">Outdoor Living</option>
             </select>
           </div>
-          
           <div style="margin-bottom: 2rem;">
-            <label style="font-size: 0.85rem; font-weight: 700; display: block; margin-bottom: 0.5rem; color: var(--text-dark);">Project Details</label>
+            <label style="font-size: 0.85rem; font-weight: 700; margin-bottom: 0.5rem; display: block;">Project Details</label>
             <textarea placeholder="Tell us about your project — size, style, any specific requirements..." style="width: 100%; border: 1px solid var(--border-light); padding: 1rem; border-radius: 8px; font-size: 1rem; font-family: inherit; outline: none; resize: vertical; min-height: 140px;" onfocus="this.style.borderColor='var(--accent)'" onblur="this.style.borderColor='var(--border-light)'"></textarea>
           </div>
-          
           <button type="submit" class="btn btn-accent" style="width: 100%;">Request a Free Quote</button>
         </form>
       </div>
 
       <div class="reveal delay-1">
-        <h3 style="margin-bottom: 2rem;">Contact Details</h3>
-        
-        <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem; align-items: flex-start;">
-          <div class="card-icon" style="margin-bottom: 0;"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
-          <div>
-            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Phone</div>
-            <a href="tel:0451668761" style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); text-decoration: none;">0451 668 761</a>
-          </div>
+        <h3 style="margin-bottom: 2rem; font-size: 1.5rem;">Contact Details</h3>
+        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;">
+          <div style="width: 48px; height: 48px; background: rgba(232,101,26,0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg></div>
+          <div><div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Phone</div><a href="tel:0451668761" style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); text-decoration: none;">0451 668 761</a></div>
         </div>
-        
-        <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem; align-items: flex-start;">
-          <div class="card-icon" style="margin-bottom: 0;"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
-          <div>
-            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Email</div>
-            <a href="mailto:info@deckline.com.au" style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); text-decoration: none;">info@deckline.com.au</a>
-          </div>
+        <div style="display: flex; gap: 1rem; margin-bottom: 1.5rem; align-items: flex-start;">
+          <div style="width: 48px; height: 48px; background: rgba(232,101,26,0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg></div>
+          <div><div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Email</div><a href="mailto:info@deckline.com.au" style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark); text-decoration: none;">info@deckline.com.au</a></div>
         </div>
-
-        <div style="display: flex; gap: 1.5rem; margin-bottom: 2rem; align-items: flex-start;">
-          <div class="card-icon" style="margin-bottom: 0;"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
-          <div>
-            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Location</div>
-            <div style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark);">Sutherland Shire, Sydney NSW</div>
-          </div>
+        <div style="display: flex; gap: 1rem; margin-bottom: 2.5rem; align-items: flex-start;">
+          <div style="width: 48px; height: 48px; background: rgba(232,101,26,0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; flex-shrink: 0;"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg></div>
+          <div><div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Location</div><div style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark);">Sutherland Shire, Sydney NSW</div></div>
         </div>
-
-        <div style="display: flex; gap: 1.5rem; margin-bottom: 3rem; align-items: flex-start;">
-          <div class="card-icon" style="margin-bottom: 0;"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"></circle><polyline points="12 6 12 12 16 14"></polyline></svg></div>
-          <div>
-            <div style="font-size: 0.85rem; color: var(--text-muted); font-weight: 700; text-transform: uppercase;">Hours</div>
-            <div style="font-size: 1.25rem; font-weight: 700; color: var(--text-dark);">Mon–Fri: 7am – 5pm</div>
-            <div style="font-size: 1rem; color: var(--text-muted);">Sat: 8am – 1pm</div>
-          </div>
-        </div>
-
         <div style="width: 100%; height: 300px; border-radius: var(--radius-lg); overflow: hidden; border: 1px solid var(--border-light); box-shadow: 0 10px 30px rgba(0,0,0,0.03);">
-          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105869.69186638067!2d150.9634!3d-34.0333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12c85f7e7774c1%3A0x5017d681632ad40!2sSutherland%20Shire%20Council%2C%20NSW!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105869.69186638067!2d150.9634!3d-34.0333!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b12c85f7e7774c1%3A0x5017d681632ad40!2sSutherland%20Shire%20Council%2C%20NSW!5e0!3m2!1sen!2sau!4v1700000000000!5m2!1sen!2sau" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
         </div>
       </div>
     </div>
