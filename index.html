@@ -119,13 +119,13 @@
     /* ─── PERFECT 100VH HERO ─── */
     #hero { 
       position: relative; 
-      height: 100vh; /* Locked to viewport height */
-      min-height: 800px; /* Prevents squishing on tiny laptops */
+      height: 100vh; 
+      min-height: 800px; 
       display: flex; 
       flex-direction: column;
       align-items: center; 
       justify-content: center;
-      padding-top: 90px; /* Offset for nav */
+      padding-top: 90px; 
       overflow: hidden; 
       background: var(--bg-white);
     }
@@ -344,6 +344,40 @@
 
   <section>
     <div class="container">
+      <div class="text-center reveal" style="margin-bottom: 4rem;">
+        <span class="section-label">Our Work</span>
+        <h2>Project Gallery</h2>
+        <p style="max-width: 600px; margin: 0 auto;">Browse our recent deck builds across Sydney's Sutherland Shire and beyond.</p>
+      </div>
+      
+      <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 1.5rem;">
+        <div class="reveal" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <img src="/api/placeholder/800/600" alt="Deck Build 1" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div class="reveal delay-1" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <img src="/api/placeholder/800/600" alt="Deck Build 2" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div class="reveal delay-2" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <img src="/api/placeholder/800/600" alt="Deck Build 3" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div class="reveal" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <img src="/api/placeholder/800/600" alt="Deck Build 4" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div class="reveal delay-1" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <img src="/api/placeholder/800/600" alt="Deck Build 5" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+        <div class="reveal delay-2" style="border-radius: var(--radius-md); overflow: hidden; aspect-ratio: 4/3; box-shadow: 0 10px 30px rgba(0,0,0,0.05);">
+          <img src="/api/placeholder/800/600" alt="Deck Build 6" style="width: 100%; height: 100%; object-fit: cover; transition: transform 0.5s var(--ease);" onmouseover="this.style.transform='scale(1.05)'" onmouseout="this.style.transform='scale(1)'">
+        </div>
+      </div>
+      <div class="text-center reveal" style="margin-top: 3rem;">
+        <a href="gallery.html" class="btn btn-outline">View Full Gallery</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-white">
+    <div class="container">
       <div class="text-center reveal" style="margin-bottom: 5rem;">
         <span class="section-label">Testimonials</span>
         <h2>What Our Clients Say</h2>
@@ -365,7 +399,7 @@
         </div>
         <div class="card reveal delay-2">
           <div class="stars">★★★★★</div>
-          <p style="font-style: italic; margin-bottom: 2rem; color: var(--text-dark);">"From the initial consultation to the final coat of oil, Deckline was professional and easy to deal with. Our composite deck is exactly what we wanted."</p>
+          <p style="font-style: italic; margin-bottom: 2rem; color: var(--text-dark);">"From the initial consultation to the final coat of oil, Deckline was professional and easy to deal with. Our composite deck is exactly what we wanted — low maintenance and beautiful."</p>
           <h4>Michelle R.</h4>
           <span style="font-size: 0.9rem; color: var(--text-muted);">Engadine</span>
         </div>
@@ -373,19 +407,28 @@
     </div>
   </section>
 
-  <section class="bg-white">
+  <section>
     <div class="container text-center reveal">
       <span class="section-label">Where We Work</span>
       <h2 style="margin-bottom: 1.5rem;">Service Areas</h2>
       <p style="max-width: 600px; margin: 0 auto 4rem;">Proudly servicing the Sutherland Shire, Menai, and Greater Sydney with premium decking solutions.</p>
       
-      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; max-width: 1000px; margin: 0 auto;">
+      <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 1rem; max-width: 1200px; margin: 0 auto;">
         <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Sutherland Shire</div>
         <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Menai</div>
         <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Cronulla</div>
         <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Caringbah</div>
         <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Miranda</div>
         <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Engadine</div>
+        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Jannali</div>
+        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Kirrawee</div>
+        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Sylvania</div>
+        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Gymea</div>
+        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Loftus</div>
+        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Alfords Point</div>
+        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Hurstville</div>
+        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Kogarah</div>
+        <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Bankstown</div>
         <div class="area-pill"><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Greater Sydney</div>
       </div>
     </div>
