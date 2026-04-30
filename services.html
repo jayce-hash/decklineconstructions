@@ -3,108 +3,176 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Our Services | Deckline Constructions</title>
+  <title>Our Decking Services | Deckline Constructions</title>
+  <meta name="description" content="From premium timber to modern composites, we offer complete decking solutions for homes across Sydney's Sutherland Shire.">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav id="navbar"><a href="index.html" class="nav-logo"><div class="nav-logo-mark">D</div> Deckline</a><ul class="nav-links"><li><a href="index.html">Home</a></li><li><a href="services.html" style="color: var(--accent);">Services</a></li><li><a href="gallery.html">Gallery</a></li><li><a href="about.html">About</a></li><li><a href="contact.html">Contact</a></li></ul><a href="contact.html" class="btn btn-accent" style="padding: 0.75rem 1.5rem;">Get a Quote</a></nav>
 
-  <main style="padding-top: 80px;">
-    <section class="hero-global" style="height: 50vh; min-height: 400px;">
-      <div class="hero-gradient" style="background: var(--bg-pitch);"></div>
+  <nav id="navbar">
+    <a href="index.html" class="nav-logo">
+      <img src="DecklineLogo.png" class="full-logo" alt="Deckline Constructions" onerror="this.outerHTML='<span style=\'color:var(--text-dark); font-size:1.5rem; font-weight:800;\'>Deckline</span>'">
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="services.html" style="color: var(--accent); font-weight: 700;">Services</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <div class="nav-actions">
+      <a href="tel:0451668761" class="nav-phone"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 0451 668 761</a>
+      <a href="contact.html" class="btn btn-accent" style="padding: 0.8rem 2rem;">Get a Quote</a>
+    </div>
+  </nav>
+
+  <main style="padding-top: 90px;">
+    
+    <header class="hero-global" style="height: 50vh; min-height: 450px;">
+      <div class="hero-gradient" style="background: var(--bg-dark);"></div>
       <div class="container hero-content reveal text-center">
         <span class="section-label">What We Do</span>
-        <h1 style="margin-bottom: 1rem;">Our Decking Services</h1>
-        <p style="max-width: 600px; margin: 0 auto; color: rgba(255,255,255,0.8);">From premium timber to modern composites, we offer complete decking solutions for homes across Sydney's Sutherland Shire.</p>
+        <h1 style="color: white; margin-bottom: 1.5rem; font-size: clamp(3rem, 6vw, 5rem);">Our Decking Services</h1>
+        <p style="max-width: 700px; margin: 0 auto; color: rgba(255,255,255,0.8);">From premium timber to modern composites, we offer complete decking solutions for homes across Sydney's Sutherland Shire.</p>
       </div>
-    </section>
+    </header>
 
-    <section style="padding: 8rem 0;">
-      <div class="container" style="display: grid; grid-template-columns: 1fr; gap: 6rem;">
+    <section style="padding: 8rem 0; background: var(--bg-white);">
+      <div class="container" style="display: grid; grid-template-columns: 1fr; gap: 8rem;">
         
-        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
-          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-          <div>
-            <h2 style="margin-bottom: 1rem;">Timber Decking</h2>
+        <div class="grid-2 reveal">
+          <img src="/api/placeholder/800/600" class="service-img grid-img" alt="Timber Decking Sydney">
+          <div class="grid-text">
+            <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M12 2L3 9l9 7 9-7-9-7z"></path></svg></div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Timber Decking</h2>
             <p style="margin-bottom: 2rem;">Premium Australian hardwood decks using Spotted Gum, Merbau, and Blackbutt. Built to withstand Sydney's climate while adding warmth and character to your home.</p>
-            <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Spotted Gum, Merbau, Blackbutt</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Naturally durable hardwoods</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Beautiful natural grain patterns</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Increases property value</li>
+            <ul class="service-list">
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Spotted Gum, Merbau, Blackbutt</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Naturally durable hardwoods</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Beautiful natural grain patterns</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Increases property value</li>
             </ul>
-            <a href="timber.html" class="btn btn-accent">Learn More</a>
+            <a href="timber.html" class="btn btn-outline">Explore Timber Decking</a>
           </div>
         </div>
 
-        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
-          <div style="order: 2;">
-            <h2 style="margin-bottom: 1rem;">Composite Decking</h2>
+        <div class="grid-2 reverse-layout reveal">
+          <img src="/api/placeholder/800/600" class="service-img grid-img" alt="Composite Decking Sydney">
+          <div class="grid-text">
+            <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"></rect></svg></div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Composite Decking</h2>
             <p style="margin-bottom: 2rem;">Modern composite boards from Ekodeck and ModWood. Virtually maintenance-free with a consistent, contemporary look that won't fade, warp, or splinter.</p>
-            <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Low maintenance</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Fade & splinter resistant</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Eco-friendly materials</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> 25-year warranty options</li>
+            <ul class="service-list">
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Low maintenance</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Fade & splinter resistant</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Eco-friendly materials</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> 25-year warranty options</li>
             </ul>
-            <a href="contact.html" class="btn btn-accent">Get a Quote</a>
+            <a href="composite.html" class="btn btn-outline">Explore Composite Decking</a>
           </div>
-          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); order: 1;">
         </div>
 
-        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
-          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-          <div>
-            <h2 style="margin-bottom: 1rem;">Deck Repairs & Restorations</h2>
+        <div class="grid-2 reveal">
+          <img src="/api/placeholder/800/600" class="service-img grid-img" alt="Deck Repairs Sydney">
+          <div class="grid-text">
+            <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M14.7 6.3a1 1 0 0 0 0 1.4l1.6 1.6a1 1 0 0 0 1.4 0l3.77-3.77a6 6 0 0 1-7.94 7.94l-6.91 6.91a2.12 2.12 0 0 1-3-3l6.91-6.91a6 6 0 0 1 7.94-7.94l-3.76 3.76z"></path></svg></div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Deck Repairs & Restorations</h2>
             <p style="margin-bottom: 2rem;">Bring your tired, weathered deck back to its former glory. From board replacements to complete structural overhauls, we handle it all.</p>
-            <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Board replacements</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Structural repairs</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Sanding & re-oiling</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Balustrade repairs</li>
+            <ul class="service-list">
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Board replacements</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Structural repairs</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Sanding & re-oiling</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Balustrade repairs</li>
             </ul>
-            <a href="contact.html" class="btn btn-accent">Get a Quote</a>
+            <a href="repairs.html" class="btn btn-outline">Explore Repairs</a>
           </div>
         </div>
 
-        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
-          <div style="order: 2;">
-            <h2 style="margin-bottom: 1rem;">Pool Decking</h2>
+        <div class="grid-2 reverse-layout reveal">
+          <img src="/api/placeholder/800/600" class="service-img grid-img" alt="Pool Decking Sydney">
+          <div class="grid-text">
+            <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M2 12h4l3-9 5 18 3-9h5"></path></svg></div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Pool Decking</h2>
             <p style="margin-bottom: 2rem;">Slip-resistant, heat-treated pool surrounds that look stunning year-round. Designed for safety and style around your pool area.</p>
-            <ul style="list-style: none; display: grid; grid-template-columns: 1fr 1fr; gap: 1rem; margin-bottom: 2rem;">
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Slip-resistant surfaces</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Heat-treated timber</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Drainage solutions</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Council-compliant builds</li>
+            <ul class="service-list">
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Slip-resistant surfaces</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Heat-treated timber</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Drainage solutions</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Council-compliant builds</li>
             </ul>
-            <a href="contact.html" class="btn btn-accent">Get a Quote</a>
+            <a href="pool.html" class="btn btn-outline">Explore Pool Decking</a>
           </div>
-          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1); order: 1;">
         </div>
 
-        <div class="reveal" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(400px, 1fr)); gap: 4rem; align-items: center;">
-          <img src="/api/placeholder/800/600" style="width: 100%; border-radius: var(--radius-lg); box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-          <div>
-            <h2 style="margin-bottom: 1rem;">Custom Outdoor Living Spaces</h2>
+        <div class="grid-2 reveal">
+          <img src="/api/placeholder/800/600" class="service-img grid-img" alt="Custom Outdoor Living Sydney">
+          <div class="grid-text">
+            <div class="card-icon"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2.5" viewBox="0 0 24 24"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path><polyline points="9 22 9 12 15 12 15 22"></polyline></svg></div>
+            <h2 style="font-size: 2.5rem; margin-bottom: 1rem;">Custom Outdoor Living Spaces</h2>
             <p style="margin-bottom: 2rem;">Complete outdoor entertainment areas with integrated seating, pergolas, planters, and feature walls. Your backyard, reimagined.</p>
-            <ul style="list-style: none; display: grid; grid-template-columns: 1fr; gap: 1rem; margin-bottom: 2rem;">
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Integrated seating & storage</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Pergolas & shade structures</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Outdoor kitchens</li>
-              <li style="font-weight: 500;"><span style="color: var(--accent);">●</span> Feature walls & planters</li>
+            <ul class="service-list">
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Integrated seating & storage</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Pergolas & shade structures</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Outdoor kitchens</li>
+              <li><svg width="20" height="20" fill="none" stroke="currentColor" stroke-width="3" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"></circle></svg> Feature walls & planters</li>
             </ul>
-            <a href="contact.html" class="btn btn-accent">Get a Quote</a>
+            <a href="outdoor.html" class="btn btn-outline">Explore Custom Spaces</a>
           </div>
         </div>
 
       </div>
     </div>
   </section>
+
+  <section style="background: var(--accent); text-align: center; padding: 8rem 0;">
+    <div class="container reveal">
+      <h2 style="color: white; margin-bottom: 1.5rem;">Ready to Upgrade Your Outdoor Space?</h2>
+      <p style="color: rgba(255,255,255,0.9); max-width: 600px; margin: 0 auto 3rem;">Get a free, no-obligation quote from Sydney's trusted deck builders. Let's build something beautiful together.</p>
+      <div style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+        <a href="contact.html" class="btn" style="background: white; color: var(--accent);">Get a Free Quote</a>
+        <a href="tel:0451668761" class="btn" style="border: 2px solid white; color: white; background: transparent;">0451 668 761</a>
+      </div>
+    </div>
+  </section>
   </main>
   
-  <footer style="background: var(--bg-pitch); color: rgba(255,255,255,0.7); padding: 5rem 1.5rem 2rem;">
-    <div style="text-align: center;">© 2026 Deckline Constructions. All rights reserved. ABN: 12 345 678 901</div>
+  <footer>
+    <div class="footer-grid">
+      <div>
+        <a href="index.html" style="display: block; margin-bottom: 2rem;"><img src="DecklineLogo.png" class="full-logo" alt="Deckline Logo" onerror="this.outerHTML='<span style=\'color:white; font-size:1.5rem; font-weight:800;\'>Deckline</span>'"></a>
+        <p style="font-size: 1rem; max-width: 300px; color: rgba(255,255,255,0.7);">Sydney's trusted deck builders. Premium timber and composite decking in Sutherland Shire and Greater Sydney.</p>
+      </div>
+      <div>
+        <div class="footer-title">Services</div>
+        <ul class="footer-links">
+          <li><a href="timber.html">Timber Decking</a></li>
+          <li><a href="composite.html">Composite Decking</a></li>
+          <li><a href="repairs.html">Deck Repairs</a></li>
+          <li><a href="pool.html">Pool Decking</a></li>
+          <li><a href="outdoor.html">Outdoor Living Spaces</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Service Areas</div>
+        <ul class="footer-links">
+          <li><a href="#">Sutherland Shire</a></li>
+          <li><a href="#">Menai & Cronulla</a></li>
+          <li><a href="#">Caringbah</a></li>
+          <li><a href="#">Greater Sydney</a></li>
+        </ul>
+      </div>
+      <div>
+        <div class="footer-title">Contact</div>
+        <ul class="footer-links">
+          <li style="display: flex; gap: 1rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 0451 668 761</li>
+          <li style="display: flex; gap: 1rem; align-items: center;"><svg width="20" height="20" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path><polyline points="22,6 12,13 2,6"></polyline></svg> info@deckline.com.au</li>
+        </ul>
+      </div>
+    </div>
+    <div style="text-align: center; border-top: 1px solid rgba(255,255,255,0.1); margin-top: 5rem; padding-top: 2.5rem; color: rgba(255,255,255,0.5); font-size: 0.9rem;">
+      © 2026 Deckline Constructions. All rights reserved. ABN: 12 345 678 901
+    </div>
   </footer>
-  <script>window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); }); const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); }}); }, { threshold: 0.1 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));</script>
+  <script>window.addEventListener('scroll', () => { document.getElementById('navbar').classList.toggle('scrolled', window.scrollY > 50); }); const observer = new IntersectionObserver((entries) => { entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('visible'); observer.unobserve(e.target); }}); }, { threshold: 0.1 }); document.querySelectorAll('.reveal').forEach(el => observer.observe(el));</script>
 </body>
 </html>
