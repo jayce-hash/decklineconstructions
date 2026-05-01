@@ -16,7 +16,7 @@
   </script>
 
   <style>
-    /* ─── ULTIMATE CLEAN STYLESHEET ─── */
+    /* ─── CLEAN SLATE STYLESHEET ─── */
     :root {
       --bg-white: #FFFFFF; --bg-grey: #FBFBFD;
       --text-dark: #1D1D1F; --text-muted: #6E6E73;
@@ -28,7 +28,7 @@
     
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     
-    /* Strict Horizontal Lock */
+    /* Strict Horizontal Lock to prevent swiping */
     html, body { font-size: 16px; -webkit-font-smoothing: antialiased; background: var(--bg-grey); overflow-x: hidden; width: 100%; position: relative; }
     body { font-family: -apple-system, BlinkMacSystemFont, "SF Pro Display", sans-serif; color: var(--text-dark); line-height: 1.5; }
 
@@ -40,7 +40,7 @@
     h4 { font-size: 1.15rem; margin-bottom: 0.5rem; }
     p { font-size: clamp(1rem, 1.1vw, 1.1rem); color: var(--text-muted); }
     
-    .section-label { color: var(--accent); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; display: block; }
+    .section-label { color: var(--accent); font-size: 0.85rem; font-weight: 700; text-transform: uppercase; letter-spacing: 0.15em; margin-bottom: 1rem; display: block; text-align: center; }
     .container { max-width: 1200px; margin: 0 auto; padding: 0 2rem; width: 100%; }
     .text-center { text-align: center; }
 
@@ -77,32 +77,36 @@
 
     @media (min-width: 1024px) { .nav-links { display: flex; } }
 
-    /* Sections & Cards */
+    /* REBUILT HERO SECTION */
+    #hero { position: relative; width: 100%; min-height: 100vh; display: flex; flex-direction: column; align-items: center; justify-content: center; padding: 140px 2rem 4rem 2rem; background: var(--bg-white); overflow: hidden; }
+    .hero-img-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.04; transform: scale(1.05); animation: slowPan 25s infinite alternate linear; z-index: 1; }
+    .hero-content { position: relative; z-index: 2; width: 100%; max-width: 1000px; display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; margin-top: 2.5rem; }
+
+    /* BULLETPROOF STATS ROW */
+    .stats-row { 
+      display: flex; 
+      flex-wrap: wrap; 
+      justify-content: center; 
+      align-items: center; 
+      gap: 4rem; 
+      width: 100%; 
+      max-width: 800px; 
+      margin-top: 5rem; 
+      padding-top: 3rem; 
+      border-top: 1px solid var(--border-light); 
+    }
+    .stat-item { display: flex; flex-direction: column; align-items: center; text-align: center; }
+    .stat-num { font-size: 3rem; font-weight: 800; color: var(--text-dark); line-height: 1; margin-bottom: 0.5rem; letter-spacing: -0.04em; }
+    .stat-label { font-size: 0.85rem; font-weight: 700; color: var(--text-muted); text-transform: uppercase; letter-spacing: 0.1em; }
+
+    /* Sections & Grids */
     section { padding: 6rem 0; }
     .bg-white { background: var(--bg-white); }
     .card { background: var(--bg-white); padding: 3rem; border-radius: var(--radius-lg); border: 1px solid var(--border-light); box-shadow: 0 8px 30px rgba(0,0,0,0.02); transition: transform 0.3s var(--ease), box-shadow 0.3s var(--ease); }
     .card:hover { transform: translateY(-4px); box-shadow: 0 15px 40px rgba(0,0,0,0.05); }
-    .card-icon { width: 48px; height: 48px; background: rgba(232, 101, 26, 0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin-bottom: 1rem; margin-left: auto; margin-right: auto; }
+    .card-icon { width: 48px; height: 48px; background: rgba(232, 101, 26, 0.1); color: var(--accent); border-radius: 12px; display: flex; align-items: center; justify-content: center; margin: 0 auto 1.5rem auto; }
 
-    /* Hero Section */
-    #hero { position: relative; height: 100vh; min-height: 750px; display: flex; flex-direction: column; align-items: center; justify-content: center; overflow: hidden; background: var(--bg-white); padding-top: 90px; }
-    .hero-img-bg { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; opacity: 0.04; transform: scale(1.05); animation: slowPan 25s infinite alternate linear; }
-    
-    .hero-content-wrapper { position: relative; z-index: 2; width: 100%; text-align: center; display: flex; flex-direction: column; align-items: center; }
-    
-    .hero-heading { margin-bottom: 1rem; line-height: 1; }
-    .hero-heading span { color: var(--accent); }
-    .hero-paragraph { margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
-    .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; width: 100%; }
-    
-    /* ─── GUARANTEED CENTERING FOR STATS ─── */
-    .stats-wrapper { width: 100%; display: flex; justify-content: center; margin-top: 5rem; }
-    .stats-row { display: flex; flex-wrap: wrap; justify-content: center; gap: 4rem; width: 100%; max-width: 800px; border-top: 1px solid var(--border-light); padding-top: 3rem; }
-    .stats-row > div { text-align: center; }
-    .stat-num { font-size: 2.75rem; font-weight: 800; color: var(--text-dark); letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.25rem;}
-    .stat-label { font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 0.1em; }
-
-    /* Grids */
     .grid-3 { display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); gap: 1.5rem; }
     .grid-2 { display: grid; grid-template-columns: 1fr; gap: 3rem; align-items: center; }
     @media (min-width: 900px) { .grid-2 { grid-template-columns: 1fr 1fr; } .reverse-layout .grid-text { order: 2; } .reverse-layout .grid-img { order: 1; } }
@@ -126,25 +130,21 @@
     
     @keyframes slowPan { from { transform: scale(1.05) translateY(0); } to { transform: scale(1.1) translateY(-2%); } }
 
-    /* ─── MOBILE PERFECTION ─── */
+    /* MOBILE OVERRIDES */
     @media (max-width: 1024px) { 
       .nav-links, .nav-phone, .nav-cta { display: none !important; } 
       .hamburger { display: block; }
       nav { padding: 0 1.5rem; height: 80px; }
-
-      .nav-logo { height: 60px; display: flex; align-items: center; }
-      .full-logo { height: 60px; max-height: 60px; transform: scale(1.6); transform-origin: left center; margin-left: 5px;}
       
-      #hero { height: auto; min-height: 100vh; justify-content: flex-start; padding-top: 130px; padding-bottom: 4rem; }
-      
-      .stats-wrapper { margin-top: 3rem; }
-      .stats-row { flex-direction: column; gap: 2.5rem; padding-top: 2.5rem; border-top: 1px solid var(--border-light); width: 80%; }
-      .stat-num { font-size: 3rem; margin-bottom: 0.2rem; }
+      /* Mobile Logo Resize */
+      .nav-logo { height: 60px; }
+      .full-logo { height: 60px; max-height: 60px; transform: scale(1.6); transform-origin: left center; }
       
       .service-list { grid-template-columns: 1fr; }
     }
     
     @media (max-width: 768px) { 
+      .stats-row { flex-direction: column; gap: 2.5rem; }
       .footer-grid { grid-template-columns: 1fr; text-align: center; gap: 2.5rem; } 
       .footer-grid img { margin: 0 auto 1.5rem !important; transform: scale(1.2); }
       .footer-links { align-items: center; }
@@ -165,7 +165,10 @@
       <li><a href="contact.html">Contact</a></li>
     </ul>
     <div class="nav-actions">
-      <a href="tel:0451668761" class="nav-phone"><svg width="18" height="18" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 0451 668 761</a>
+      <a href="tel:0451668761" class="nav-phone">
+        <svg width="18" height="18" fill="none" stroke="var(--accent)" stroke-width="2" viewBox="0 0 24 24"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg> 
+        0451 668 761
+      </a>
       <a href="contact.html" class="btn btn-accent nav-cta" style="padding: 0.8rem 2rem;">Get a Free Quote</a>
       <button class="hamburger" aria-label="Menu">
         <svg viewBox="0 0 24 24" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"><line x1="3" y1="12" x2="21" y2="12"></line><line x1="3" y1="6" x2="21" y2="6"></line><line x1="3" y1="18" x2="21" y2="18"></line></svg>
@@ -186,12 +189,9 @@
   <header id="hero">
     <img src="/api/placeholder/1920/1080" class="hero-img-bg" alt="Sydney Decking Background">
     
-    <div class="container hero-content-wrapper reveal">
+    <div class="hero-content reveal">
       <span class="section-label">Sutherland Shire's Trusted Deck Builders</span>
-      <div class="hero-heading">
-        <h1>Custom Deck Builders in</h1>
-        <h1 style="color: var(--accent);">Sydney.</h1>
-      </div>
+      <h1 class="hero-heading">Custom Deck Builders in <span style="color: var(--accent);">Sydney.</span></h1>
       <p class="hero-paragraph">High-quality outdoor living spaces built to last. Premium timber and composite decking for your dream home.</p>
       
       <div class="hero-actions">
@@ -199,14 +199,20 @@
         <a href="services.html" class="btn btn-outline">Explore Services</a>
       </div>
       
-      <div class="stats-wrapper">
-        <div class="stats-row">
-          <div><div class="stat-num">15+</div><div class="stat-label">Years Experience</div></div>
-          <div><div class="stat-num">500+</div><div class="stat-label">Decks Built</div></div>
-          <div><div class="stat-num">100%</div><div class="stat-label">Satisfaction</div></div>
+      <div class="stats-row">
+        <div class="stat-item">
+          <div class="stat-num">15+</div>
+          <div class="stat-label">Years Experience</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">500+</div>
+          <div class="stat-label">Decks Built</div>
+        </div>
+        <div class="stat-item">
+          <div class="stat-num">100%</div>
+          <div class="stat-label">Satisfaction</div>
         </div>
       </div>
-      
     </div>
   </header>
 
@@ -235,6 +241,7 @@
         <h2>Expert Decking Solutions</h2>
         <p style="max-width: 600px; margin: 0 auto;">From premium timber to modern composites, we deliver decking solutions tailored to your home and lifestyle.</p>
       </div>
+      
       <div class="grid-2 service-row reveal">
         <img src="/api/placeholder/800/450" class="service-img grid-img" alt="Timber Decking">
         <div class="grid-text">
@@ -250,6 +257,7 @@
           <a href="services.html#timber" class="btn btn-outline" style="margin-top: 0.5rem;">Learn More</a>
         </div>
       </div>
+      
       <div class="grid-2 service-row reverse-layout reveal">
         <img src="/api/placeholder/800/450" class="service-img grid-img" alt="Composite Decking">
         <div class="grid-text">
@@ -265,6 +273,7 @@
           <a href="services.html#composite" class="btn btn-outline" style="margin-top: 0.5rem;">Learn More</a>
         </div>
       </div>
+      
       <div class="grid-2 service-row reveal">
         <img src="/api/placeholder/800/450" class="service-img grid-img" alt="Deck Repairs">
         <div class="grid-text">
@@ -280,6 +289,22 @@
           <a href="services.html#repairs" class="btn btn-outline" style="margin-top: 0.5rem;">Learn More</a>
         </div>
       </div>
+      
+      <div class="grid-2 service-row reverse-layout reveal" style="margin-bottom: 0; padding-bottom: 0;">
+        <img src="/api/placeholder/800/450" class="service-img grid-img" alt="Pool Decking">
+        <div class="grid-text">
+          <div class="card-icon" style="margin-left: 0;"><svg width="24" height="24" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><path d="M2 12h4l3-9 5 18 3-9h5"></path></svg></div>
+          <h3>Pool Decking</h3>
+          <p style="margin-top: 0.5rem;">Slip-resistant, heat-treated pool surrounds that look stunning year-round. Designed for safety and style around your pool area.</p>
+          <ul class="service-list">
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="2.5"/></svg> Slip-resistant surfaces</li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="2.5"/></svg> Heat-treated timber</li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="2.5"/></svg> Drainage solutions</li>
+            <li><svg viewBox="0 0 24 24"><polyline points="20 6 9 17 4 12" fill="none" stroke="currentColor" stroke-width="2.5"/></svg> Council compliant</li>
+          </ul>
+          <a href="services.html#pool" class="btn btn-outline" style="margin-top: 0.5rem;">Learn More</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -287,7 +312,7 @@
     <div class="container grid-2">
       <div class="reveal"><img src="/api/placeholder/800/600" class="service-img" alt="Sydney Decking Specialists" style="aspect-ratio: 4/3;"></div>
       <div class="reveal delay-1">
-        <span class="section-label">About Deckline</span>
+        <span class="section-label" style="text-align: left;">About Deckline</span>
         <h2 style="margin-bottom: 1rem;">Sydney's Decking Specialists Since 2009</h2>
         <p style="margin-bottom: 1.5rem;">Deckline Constructions is a family-owned business based in the Sutherland Shire. We specialise in premium timber and composite decking for residential properties across Sydney.</p>
         <ul class="service-list" style="grid-template-columns: 1fr; margin-bottom: 1.5rem;">
@@ -317,25 +342,10 @@
   </section>
 
   <section class="bg-white">
-    <div class="container">
-      <div class="text-center reveal" style="margin-bottom: 5rem;">
-        <span class="section-label">Testimonials</span>
-        <h2>What Our Clients Say</h2>
-        <p style="max-width: 600px; margin: 0 auto;">Real reviews from happy homeowners across Sydney.</p>
-      </div>
-      <div class="grid-3">
-        <div class="card reveal"><div class="card-icon" style="margin-left:0; color: var(--accent); background:none; padding:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p style="font-style: italic; margin-bottom: 2rem; color: var(--text-dark);">"Deckline transformed our backyard into an absolute showpiece. The spotted gum deck is stunning and the whole process was seamless."</p><h4>Sarah M.</h4><span style="font-size: 0.9rem; color: var(--text-muted);">Menai</span></div>
-        <div class="card reveal delay-1"><div class="card-icon" style="margin-left:0; color: var(--accent); background:none; padding:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p style="font-style: italic; margin-bottom: 2rem; color: var(--text-dark);">"We couldn't be happier with our new pool deck. The team was professional, tidy, and delivered ahead of schedule."</p><h4>James & Kate L.</h4><span style="font-size: 0.9rem; color: var(--text-muted);">Cronulla</span></div>
-        <div class="card reveal delay-2"><div class="card-icon" style="margin-left:0; color: var(--accent); background:none; padding:0;"><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg><svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg></div><p style="font-style: italic; margin-bottom: 2rem; color: var(--text-dark);">"From the initial consultation to the final coat of oil, Deckline was professional and easy to deal with."</p><h4>Michelle R.</h4><span style="font-size: 0.9rem; color: var(--text-muted);">Engadine</span></div>
-      </div>
-    </div>
-  </section>
-
-  <section>
     <div class="container text-center reveal">
       <span class="section-label">Where We Work</span>
       <h2 style="margin-bottom: 1.5rem;">Service Areas</h2>
-      <p style="max-width: 600px; margin: 0 auto 4rem;">Proudly servicing the Sutherland Shire, Menai, and Greater Sydney.</p>
+      <p style="max-width: 600px; margin: 0 auto 4rem;">Proudly servicing the Sutherland Shire, Menai, and Greater Sydney with premium decking solutions.</p>
       <div style="display: flex; flex-wrap: wrap; justify-content: center; gap: 0.75rem; max-width: 1000px; margin: 0 auto;">
         <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Sutherland Shire</div>
         <div class="area-pill"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path><circle cx="12" cy="10" r="3"></circle></svg> Menai</div>
