@@ -88,9 +88,23 @@
     .hero-paragraph { margin-bottom: 2.5rem; max-width: 600px; margin-left: auto; margin-right: auto; }
     .hero-actions { display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap; width: 100%; }
     
-    /* ─── BULLETPROOF GRID CENTERING FIX ─── */
-    .stats-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin: 4rem auto 0 auto; border-top: 1px solid var(--border-light); padding-top: 3rem; width: 100%; max-width: 800px; }
-    .stats-row > div { display: flex; flex-direction: column; align-items: center; justify-content: center; text-align: center; }
+    /* ─── SLEDGEHAMMER CENTERING FIX ─── */
+    .stats-row { 
+      display: flex !important; 
+      flex-wrap: wrap !important; 
+      justify-content: center !important; 
+      gap: 4rem; 
+      margin: 5rem auto 0 auto !important; 
+      border-top: 1px solid var(--border-light); 
+      padding-top: 3rem; 
+      width: 100%; 
+      max-width: 800px; 
+      align-self: center !important; 
+    }
+    .stats-row > div { 
+      text-align: center; 
+      min-width: 150px; 
+    }
     .stat-num { font-size: 2.75rem; font-weight: 800; color: var(--text-dark); letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.25rem;}
     .stat-label { font-size: 0.8rem; text-transform: uppercase; color: var(--text-muted); font-weight: 700; letter-spacing: 0.1em; }
 
